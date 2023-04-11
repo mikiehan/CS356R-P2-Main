@@ -1,6 +1,9 @@
 # Project 2: Breathing Rate Estimation with acoustic FMCW Signal
 ## Goal
-* Find out breathing rate of received FMCW signal.
+* Learn how to manipulate FMCW signal that contains multiple chirps.
+* Obtain distance estimates per chirp.
+* Find out breathing rate of based on the distance estimates.
+* Understand the limitation (resolution) of FMCW signal given the setting.
 
 ## Pre-requisite
 Make sure you have successfully completed Project 2 Primer and understand how FMCW signal works. 
@@ -44,7 +47,7 @@ Also note the acoustic FMCW signal travels at 343 m/s (this is the speed of soun
 	plot(1:numChirps, distance_estimates);
 	xlabel('Chirps')
 	ylabel('Distance estimated(m)');
-	title('Distance estimated');	 
+	title('Distance Estimation');	 
 	```
 
 After implementing your code, answer the following questions. 

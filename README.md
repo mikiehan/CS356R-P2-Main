@@ -33,8 +33,9 @@ Also note the acoustic FMCW signal travels at 343 m/s (this is the speed of soun
 	% therefore contains the numChirps (6000) chirps, which is K x numChirps samples 
 	load RX.mat RX 
 	
-	% Initialize distance estimates as all zeros.
+	% Initialize variables that you will need to populate
 	distance_estimates = zeros(1, numChirps);
+	peak_frequencies = zeros(1, numChirps); 
 
 	% Write your own code to process signal chirp by chirp
 	% For each chirp find out the distance estimation (the same process you did in Project2 Primer).
@@ -48,6 +49,9 @@ Also note the acoustic FMCW signal travels at 343 m/s (this is the speed of soun
 	xlabel('Chirps')
 	ylabel('Distance estimated(m)');
 	title('Distance Estimation');	 
+
+	% Save output data to a file
+	save Output.mat distance_estimates peak_frequencies
 	```
 
 After implementing your code, answer the following questions. 
@@ -67,3 +71,9 @@ After implementing your code, answer the following questions.
 * Q7: Based on Q4-Q6, explain why the figure that plots the distance estimates are not increasing or decreasing smoothly, but rather it contains discrete steps/jumps. [Put your answer here.]
 
 * Q8: This current experiment data was from simulation. Explain what would be added challenges when you process the data that is actually measured from a physical wireless device. How would you tackle such challenges? Discuss at least 2 challenges and the possible solution. [Put your answer here.]
+
+## What to submit
+Make sure you do the following.
+* Update README.md with the answers completed for Q1-Q8. 
+* Check in your final .m code, distance estimate figure (saved as .jpg), and Output.mat
+* Submit the URL of your Github repository to Canvas. 

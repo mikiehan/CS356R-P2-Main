@@ -73,7 +73,6 @@ After implementing your code, answer the following questions.
 * Q8: This current experiment data was from simulation. Explain what would be added challenges when you process the data that is actually measured from a physical wireless device. How would you tackle such challenges? Discuss at least 2 challenges and the possible solution. [Put your answer here.]
 
 ## What to submit
-Make sure you do the following.
-* Update README.md with the answers completed for Q1-Q8. 
-* Check in your final .m code, distance estimate figure (saved as .jpg), and Output.mat
+* Update README.md with the answers completed for Q1-Q8.
+* Check in your final .m code, distance estimate figure (saved as .jpg), and Output.mat to your repository
 * Submit the URL of your Github repository to Canvas. 
